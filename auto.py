@@ -55,7 +55,7 @@ class DaKa(object):
             print("请检查账号密码是否正确")
             exit(1)
         try:
-            self.sess.post(self.validate_url, data=data2)
+            self.sess.post(self.base_url, data=data2)
         except:
             print("无法通过信网中心认证")
             exit(1)
